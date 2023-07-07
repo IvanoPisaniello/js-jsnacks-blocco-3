@@ -1,48 +1,42 @@
 const divContainer = document.getElementById("divContainer");
 let number = [];
-
+let oddNumber = 0;
 for (let i = 0; i < 2; i++) {
     let div = document.createElement("div");
     div.classList.add("color-text" + i);
     div.innerHTML = ("blablabla")
 
-
-
     divContainer.append(div);
-
-
-
-
-
-
 }
 
+document.querySelector(".color-text0").innerHTML = ("i numeri dispari sono:");
+document.querySelector(".color-text1").innerHTML = ("i numeri pari sono:");
 
+let i = 0;
 for (let i = 0; i < 10; i++) {
     number.push(Math.floor(Math.random() * (100)));
     console.log(number[i]);
 
-    const numbers = (number[i]);
+    let numbers = (number[i]);
+
+    while (i < numbers.lenght) {
+
+    } if (numbers % 2 === 1) {
+        console.log("numeri dispari:" + numbers)
+        document.querySelector(".color-text0").innerHTML += numbers.toString() + " ";
 
 
+    } else if (numbers % 2 === 0) {
+        console.log("numeri pari:" + numbers)
+        document.querySelector(".color-text1").innerHTML += numbers.toString() + " ";
 
-    // if (numbers % 2 !== 0) {
-    //     console.log(numbers);
-    // }
+    }
 
 }
-if (numbers % 2 !== 0) {
-    console.log(numbers);
-}
 
-// const oddNumber = (number % 2 !== 0);
-// const firstDiv = document.querySelector("color-text0");
 
-// console.log(oddNumber);
 
-// document.querySelector(".color-text0").innerHTML = oddNumber;
 
-// console.log(number);
 
 
 
