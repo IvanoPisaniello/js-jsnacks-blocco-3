@@ -19,9 +19,7 @@ for (let i = 0; i < 10; i++) {
 
     let numbers = (number[i]);
 
-    while (i < numbers.lenght) {
-
-    } if (numbers % 2 === 1) {
+    if (numbers % 2 === 1) {
         console.log("numeri dispari:" + numbers)
         document.querySelector(".color-text0").innerHTML += numbers.toString() + " ";
 
